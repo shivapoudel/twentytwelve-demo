@@ -1,5 +1,18 @@
 <?php
 /**
+ * Twenty Twelve Demo functions and definitions.
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package Twenty_Twelve_Demo
+ */
+
+/**
+ * Load TGM Activation file.
+ */
+require get_template_directory() . '/includes/freemius-tracker.php';
+
+/**
  * Enqueue scripts.
  */
 function twentytwelve_child_enqueue_scripts() {
