@@ -10,7 +10,7 @@
 /**
  * Load TGM Activation file.
  */
-require get_template_directory() . '/includes/freemius-tracker.php';
+require get_stylesheet_directory() . '/includes/freemius-tracker.php';
 
 /**
  * Enqueue scripts.

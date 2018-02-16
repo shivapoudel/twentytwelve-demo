@@ -11,14 +11,14 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Create a helper function for easy SDK access.
  */
-function we_fs() {
-	global $we_fs;
+function twentytwelve_demo() {
+	global $twentytwelve_demo;
 
-	if ( ! isset( $we_fs ) ) {
+	if ( ! isset( $twentytwelve_demo ) ) {
 		// Include Freemius SDK.
 		require_once dirname( __FILE__ ) . '/freemius/start.php';
 
-		$we_fs = fs_dynamic_init( array(
+		$twentytwelve_demo = fs_dynamic_init( array(
 			'id'             => '1746',
 			'slug'           => 'twentytwelve-demo',
 			'type'           => 'theme',
@@ -28,7 +28,7 @@ function we_fs() {
 			'has_paid_plans' => false,
 			'menu'           => array(
 				'override_exact' => true,
-				'first-path'     => 'plugins.php',
+				'first-path'     => 'themes.php',
 				'account'        => false,
 				'contact'        => false,
 				'support'        => false,
@@ -36,11 +36,11 @@ function we_fs() {
 		) );
 	}
 
-	return $we_fs;
+	return $twentytwelve_demo;
 }
 
 // Init Freemius.
-we_fs();
+twentytwelve_demo();
 
 // Signal that SDK was initiated.
-do_action( 'we_fs_loaded' );
+do_action( 'twentytwelve_demo_loaded' );
