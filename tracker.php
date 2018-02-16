@@ -19,10 +19,10 @@ function twentytwelve_demo() {
 		require_once dirname( __FILE__ ) . '/freemius/start.php';
 
 		$twentytwelve_demo = fs_dynamic_init( array(
-			'id'             => '1746',
+			'id'             => '1747',
 			'slug'           => 'twentytwelve-demo',
 			'type'           => 'theme',
-			'public_key'     => 'pk_96342965253d0d84cee57932c4d02',
+			'public_key'     => 'pk_f2228cc5d6dcab307e2b353521f66',
 			'is_premium'     => false,
 			'has_addons'     => false,
 			'has_paid_plans' => false,

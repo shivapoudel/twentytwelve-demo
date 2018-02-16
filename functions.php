@@ -7,10 +7,10 @@
  * @package Twenty_Twelve_Demo
  */
 
-/**
- * Load TGM Activation file.
- */
-require get_stylesheet_directory() . '/includes/freemius-tracker.php';
+// Include the main freemius tracker.
+if ( ! function_exists( 'twentytwelve_demo' ) ) {
+	include_once get_stylesheet_directory() . '/tracker.php';
+}
 
 /**
  * Enqueue scripts.
